@@ -2,6 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+It is a first foray into creating a Flask backend that will (hopefully) connect with a PostgreSQL DB, with a React frontend.
+
+### Background
+#### Flask-React Tutorial
+https://blog.miguelgrinberg.com/post/how-to-create-a-react--flask-project
+#### PostgreSQL-Flask Tutorial
+https://www.digitalocean.com/community/tutorials/how-to-use-a-postgresql-database-in-a-flask-application
+
+## To Start:
+From react-flask-app:
+yarn start
+yarn start-api
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -13,6 +26,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `yarn start-api`
+Runs the Flask backend for the project.
 
 ### `npm test`
 
