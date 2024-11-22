@@ -11,8 +11,8 @@ https://blog.miguelgrinberg.com/post/how-to-create-a-react--flask-project
 https://www.digitalocean.com/community/tutorials/how-to-use-a-postgresql-database-in-a-flask-application
 
 ## To Start:
-From react-flask-app:
-yarn start
+From react-flask-app:\
+yarn start\
 yarn start-api
 
 ## Available Scripts
