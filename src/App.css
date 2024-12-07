@@ -13,6 +13,18 @@
   }
 }
 
+.clown-paragraph {
+  animation: colors-shift infinite 1s;
+}
+
+.clown-table {
+  animation: table-spin infinite 20s linear;
+}
+
+.clown-button{
+  animation: clown-button infinite 2s;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +40,60 @@
   color: #61dafb;
 }
 
+@keyframes colors-shift {
+  0% {color:pink}
+  25% {color:orange}
+  33% {color:chartreuse}
+  38% {color:navy}
+  47% {color:purple}
+  68% {color:maroon}
+  82% {color:darkgreen}
+  90% {color:rosybrown}
+  96% {color:black}
+  100% {color:darkslategrey}
+}
+
+@keyframes clown-button {
+  0% {
+    transform: scale(1, 1)
+  }
+  25% {
+    transform: scale(0.25, 3)
+  }
+  50% {
+    transform: scale(3, 0.25)
+  }
+  75% {
+    transform: scale(4, 4)
+  }
+  100% {
+    transform: scale(.01, .01)
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes table-spin {
+  0% {
+    transform: rotate(0deg) translateX(0%) translateY(0%);
+  }
+  25% {
+    transform: rotate(360deg) translateX(100%) translateY(-100%);
+  }
+  50% {
+    transform: rotate(0deg) translateX(0%);
+  }
+  75% {
+    transform: rotate(-360deg) translateX(-100%) translateY(100%);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0%) translateY(0%);
   }
 }
